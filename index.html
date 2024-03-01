@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div id="app"></div>
 
     <script>
         show(1);
-        function show(number){
+        function show(number) {
             let nextNumber = number + 1;
-            if(nextNumber == 5) {
+            if (nextNumber == 5) {
                 nextNumber = 1;
             }
             let previousNumber = number - 1;
-            if(previousNumber == 0){
+            if (previousNumber == 0) {
                 previousNumber = 4;
             }
             document.getElementById('app').innerHTML = /*HTML*/`
@@ -31,7 +33,7 @@
         //     document.getElementById('app').innerHTML = /*HTML*/`
         //         <h1>2</h1>
         //         <button onclick="show1()">forrige</button>
-        //         <button onclick="show3()">neste</button>            
+        //         <button onclick="show3()">neste</button>
         //     `;
         // }
 
@@ -39,7 +41,7 @@
         //     document.getElementById('app').innerHTML = /*HTML*/`
         //         <h1>3</h1>
         //         <button onclick="show2()">forrige</button>
-        //         <button onclick="show4()">neste</button>            
+        //         <button onclick="show4()">neste</button>
         //     `;
         // }
 
@@ -47,12 +49,13 @@
         //     document.getElementById('app').innerHTML = /*HTML*/`
         //         <h1>4</h1>
         //         <button onclick="show3()">forrige</button>
-        //         <button onclick="show1()">neste</button>            
+        //         <button onclick="show1()">neste</button>
         //     `;
         // }
     </script>
 
 
-    
+
 </body>
+
 </html>
